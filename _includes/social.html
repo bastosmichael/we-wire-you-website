@@ -1,0 +1,11 @@
+<div class="social" itemscope itemtype="https://schema.org/Organization">
+  <meta itemprop="name" content="{{ site.title }}">
+  <meta itemprop="url" content="{{ site.url }}">
+  <div itemprop="sameAs">
+    {% for item in site.data.social %}
+    <a href="{{ item.link }}" target="_blank" itemprop="url">
+      <img src="{{ item.image | relative_url }}" title="{{ item.name }}" alt="{{ item.name }}" itemprop="logo" />
+    </a>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="call" itemscope itemtype="https://schema.org/ContactPoint">
+  <div class="call-box-top">
+    {% if site.data.contact.phone %}
+    <div class="call-phone">
+      <strong>Phone:</strong>
+      <a href="tel:{{ site.data.contact.phone }}" itemprop="telephone">
+        {{ site.data.contact.phone }}
+      </a>
+    </div>
+    {% endif %}
+    {% if site.data.contact.email %}
+    <div class="call-email">
+      <strong>Email:</strong>
+      <a href="mailto:{{ site.data.contact.email }}" itemprop="email">
+        {{ site.data.contact.email }}
+      </a>
+    </div>
+    {% endif %}
+  </div>
+  {% if include.show_button %}
+  <div class="call-box-bottom">
+    <a href="{{ site.baseurl }}/{{ site.data.contact.contact_button_link }}" class="button" itemprop="url">Get a
+      Quote</a>
+  </div>
+  {% endif %}
+</div>

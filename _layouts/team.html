@@ -1,0 +1,25 @@
+---
+layout: default
+bodyClass: "page-team"
+---
+
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="team team-single" itemscope itemtype="https://schema.org/Person">
+        <h1 class="title" itemprop="name">{{ page.title }}</h1>
+        <div class="content" itemprop="description">{{ content }}</div>
+        {% if page.image %}
+        <img alt="{{ page.title }}" src="{{ page.image | relative_url }}" itemprop="image" class="img-fluid mb-4">
+        {% endif %}
+        {% if page.jobtitle %}
+        <p class="team-jobtitle" itemprop="jobTitle">{{ page.jobtitle }}</p>
+        {% endif %}
+        {% if page.linkedinurl %}
+        <a target="_blank" href="{{ page.linkedinurl }}" rel="noreferrer" itemprop="sameAs">LinkedIn</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+

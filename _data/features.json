@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Expert Troubleshooting & Repairs",
+    "description": "Comprehensive electrical troubleshooting and expert repair services to ensure your home's electrical systems are safe and efficient.",
+    "image": {
+      "url": "images/features/troubleshooting_repairs.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Emergency Electrical Services",
+    "description": "Available 24/7 for emergency electrical repairs, ensuring your safety and comfort at any time.",
+    "image": {
+      "url": "images/features/emergency_services.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Electrical Installations & Upgrades",
+    "description": "Professional installation and upgrade services for all electrical components including circuit breakers, outlets, and lighting fixtures.",
+    "image": {
+      "url": "images/features/electrical_installations.svg",
+      "width": 80,
+      "height": 80
+    }
+  }
+]
